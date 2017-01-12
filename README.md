@@ -28,7 +28,7 @@ print(v$plot)
 ```
 Plot:
 <p align="center">
-	<img src="https://raw.githubusercontent.com/hexeh/volterra/master/Rplot.png" alt = "Plot Image">
+	<img src="https://raw.githubusercontent.com/hexeh/volterra/master/plot.png" alt = "Plot Image">
 </p>
 
 ## Dependencies
