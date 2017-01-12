@@ -89,7 +89,7 @@ volterra <- function(FreeEl, Core, step = 100, intstart = 0, intend = 10, limits
   if( ( max(y) - min(y) ) < 10 * h ){ limits <- c( ( min(y) - h ) , ( max(y) + h ) ) }
   p <- ggplot( data = data.frame( vals = y, time = dot ), mapping = aes( x = time, y = vals ) )
   p = p + geom_area( fill = "lightblue", color = "darkblue" )
-  p = p + labs( x = "Time", y = "", title = "Walther Equation" )
+  p = p + labs( x = "Time", y = "", title = "Volterra Equation" )
   p = p + theme( plot.title = element_text( hjust = 0.5, face = "bold" ) )
   p = p + ylim( limits )
   print(p)
