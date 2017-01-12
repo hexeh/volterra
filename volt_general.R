@@ -4,6 +4,7 @@ volterra <- function(FreeEl, Core, step = 100, intstart = 0, intend = 10, limits
   # "rectangle" is for rule of right rectangles
   # "trapezoid" is for trapezzoid rule
   # "parabol" is for parabol rule (Simpson's rule)
+  library("ggplot2")
   
   ms = c("rectangle", "trapezoid", "parabol");
   
@@ -92,5 +93,6 @@ volterra <- function(FreeEl, Core, step = 100, intstart = 0, intend = 10, limits
   p = p + theme( plot.title = element_text( hjust = 0.5, face = "bold" ) )
   p = p + ylim( limits )
   print(p)
-  return(y)
+  res = list(values = y, plot = p)
+  return( res )
 }
