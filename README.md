@@ -1,6 +1,7 @@
 # Volterra equation
 ## Volterra equation of the second kind
 ## R language
+## Numeric solution - finite sums
 
 ---
 
